@@ -56,7 +56,7 @@ export default function SignUpScreen() {
             //     return;
             // }
 
-            if (insertError) {
+            if (insertError ) {
               console.log('Insert Error Details:', insertError);
               console.log('Insert Payload:', {
                   uuid: user.id,
