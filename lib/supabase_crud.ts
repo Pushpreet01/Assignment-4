@@ -1,6 +1,6 @@
-import supabase from "./supabase";
+import { supabase } from "./supabase";
 
-const TABLE_NAME = "sampledatabase";
+const TABLE_NAME = "user_details";
 
 export async function getUsers() {
   const { data, error } = await supabase.from(TABLE_NAME).select("*");
